@@ -135,11 +135,8 @@
                         <a href="./em_construcao/construcao.html" class="px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
                             Conciliação de Cartão
                         </a>
-                        <a href="./em_construcao/construcao.html" class="px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 border-b border-white/5 last:border-0 transition-colors">
-                            Plataforma de Integração
-                        </a>
                         <a href="./em_construcao/construcao.html" class="px-5 py-4 hover:bg-cyan-400/10 hover:text-cyan-400 last:border-0 transition-colors">
-                            Dashboard Analytics
+                            Plataforma de Integração
                         </a>
                     </div>
                 </div>
@@ -888,8 +885,7 @@
             <p>
                 Av. Dra. Nadir Aguiar, 1805<br>
                 Jd. Dr. Paulo Gomes Romeo<br>
-                Ribeirão Preto/SP -
-                CEP 14056-680
+                Ribeirão Preto/SP
             </p>
         </div>
     </div>
@@ -950,6 +946,11 @@
                 <div class="s-footer__logo">
                 <img src="./img/logo_inovare_2.png" alt="Inovare Soluções e Sistemas" 
                 width="250">
+                </div>
+
+                <div class="s-footer__partners">
+                    <img src="./img/DNA_USP.png" alt="DNA USP" class="partner-logo">
+                    <img src="./img/SUPERA_logo.png" alt="Supera" class="partner-logo">
                 </div>
 
                 <p class="s-footer__description">
@@ -1042,10 +1043,30 @@
 
     /* LOGO */
     .s-footer__logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+        display: grid;
+        gap: 15px;
         margin-bottom: 20px;
+    }
+
+    /* LOGOS PARCEIROS */
+    .s-footer__partners {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        align-items: center;
+        justify-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .partner-logo {
+        height: 42px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .partner-logo:last-child {
+        margin-right: auto;
     }
 
     .logo-box {
